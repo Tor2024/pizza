@@ -2130,6 +2130,12 @@ footer { background: var(--text); color: rgba(255, 255, 255, 0.6); }
     border-radius: var(--radius-sm);
     text-align: center;
 }
+/* menu page: label sits ABOVE the photo */
+.menu-category-section .dish-photo .dish-label {
+    margin: 1.25rem 1.25rem 0;
+    align-self: flex-start;
+    text-align: left;
+}
 
 /* ============================================================= */
 /* RESPONSIVE FOR APPENDED PAGES (must stay after base defs)     */
