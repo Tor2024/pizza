@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Italiana Siegen | Authentische Italienische Pizza</title>
+    <meta name="description" content="Authentische italienische Pizza in Siegen. 96 Stunden Teigruhe, echte italienische Zutaten, handgefertigtes Handwerk.">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="L'Italiana Siegen | Authentische Italienische Pizza">
+    <meta property="og:description" content="Erleben Sie den wahren Geschmack Italiens in Siegen. 96h Teigruhe & echte Zutaten.">
+    <meta property="og:image" content="assets/hero.jpg">
+    
+    <!-- Schema.org for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FoodEstablishment",
+      "name": "L'Italiana Siegen",
+      "image": "assets/hero.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Kölner Straße 12",
+        "addressLocality": "Siegen",
+        "postalCode": "57072",
+        "addressCountry": "DE"
+      },
+      "telephone": "+492711234567",
+      "servesCuisine": "Italian, Pizza",
+      "priceRange": "$$",
+      "openingHours": "Mo-So 11:30-22:00"
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Top Notice -->
+    <div class="top-notice">
+        Handgefertigt in Siegen &nbsp;·&nbsp; 96 Stunden Teigruhe &nbsp;·&nbsp; Echte italienische Zutaten
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-wrapper">
+            <a href="index.html" class="brand-logo">
+                <div class="logo-top">Pizzeria</div>
+                <div class="logo-main"><span class="g">ITALI</span><span class="r">ANA</span></div>
+                <div class="logo-bottom"><span></span>Siegen<span></span></div>
+            </a>
+
+            <div class="open-indicator" id="open-indicator" aria-live="polite">
+                <span class="open-dot"></span>
+                <span class="open-text">Jetzt ge&ouml;ffnet</span>
+            </div>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Menü öffnen">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="main-nav" id="main-nav">
+                <li><a href="menu.html">Speisekarte</a></li>
+                <li><a href="uber-uns.html">Über uns</a></li>
+                <li><a href="standorte.html">Standorte</a></li>
+                <li><a href="catering.html">Catering</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="kontakt.html" class="btn-primary">Reservieren</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section id="hero">
+            <div class="hero-text reveal reveal-left">
+                <p class="hero-eyebrow">Seit 2024 in Siegen</p>
+                <h1><span class="green">Echt.</span><br><span class="red">Italienisch.</span></h1>
+                <p>Erleben Sie den wahren Geschmack Italiens. Jede Pizza ist ein handgefertigtes Unikat — gebacken mit Leidenschaft und nach traditionellem Familienrezept.</p>
+                <div class="hero-cta">
+                    <a href="menu.html" class="btn-primary">Speisekarte</a>
+                    <a href="kontakt.html" class="btn-outline">Tisch reservieren</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper reveal reveal-right">
+                <div class="hero-slider">
+                    <div class="hero-slide active" style="background-image: url('assets/hero.jpg')"></div>
+                    <div class="hero-slide" style="background-image: url('assets/hero1 (1).webp')"></div>
+                    <div class="hero-slide" style="background-image: url('assets/hero2 (1).webp')"></div>
+                    <div class="hero-slide" style="background-image: url('assets/hero3 (1).webp')"></div>
+                    <div class="hero-slide" style="background-image: url('assets/hero4 (1).webp')"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRICOLOR -->
+        <div class="tricolor-stripe">
+            <div class="stripe-g"></div>
+            <div class="stripe-w"></div>
+            <div class="stripe-r"></div>
+        </div>
+
+        <!-- FOOD SHOWCASE — editorial grid with all images -->
+        <section class="food-showcase">
+            <div class="container">
+                <div class="section-header-brand reveal reveal-up">
+                    <svg class="olive-premium-svg" viewBox="0 0 480 110" xmlns="http://www.w3.org/2000/svg" style="width: 300px; margin-bottom: 1.25rem;">
+                    <!-- Left branch -->
+
+                        <g class="olive-branch-half">
+                            <path class="stem" d="M14,96 C58,88 118,64 216,20" stroke="var(--gold)" stroke-width="1.6" fill="none" stroke-linecap="round" />
+                            <path class="stem" d="M96,74 C112,66 128,66 142,72" stroke="var(--gold)" stroke-width="1.2" fill="none" stroke-linecap="round" />
+                            <path class="stem" d="M152,52 C168,48 184,50 196,58" stroke="var(--gold)" stroke-width="1.2" fill="none" stroke-linecap="round" />
+                            <path class="leaf" d="M38.0,91.0 C56.4,89.1 69.9,76.4 75.7,64.6 C62.6,66.1 46.0,74.4 38.0,91.0 Z" />
+                            <path class="leaf" style="animation-delay: 0.15s" d="M38.0,91.0 C47.6,102.2 62.2,105.2 72.6,103.6 C65.7,95.7 52.6,88.6 38.0,91.0 Z" />
+                            <path class="leaf" style="animation-delay: 0.3s" d="M66.0,82.0 C81.8,74.4 89.7,58.6 91.1,46.2 C79.9,51.7 67.8,64.6 66.0,82.0 Z" />
+                            <path class="leaf" style="animation-delay: 0.45s" d="M66.0,82.0 C77.0,90.4 91.0,90.3 100.2,86.8 C92.3,80.9 78.9,77.0 66.0,82.0 Z" />
+                            <path class="leaf" style="animation-delay: 0.6s" d="M96.0,74.0 C107.6,62.1 109.5,45.5 106.7,34.0 C98.6,42.5 91.9,57.9 96.0,74.0 Z" />
+                            <path class="leaf" style="animation-delay: 0.75s" d="M96.0,74.0 C111.0,78.6 125.8,73.1 134.2,65.9 C123.6,62.7 107.8,63.7 96.0,74.0 Z" />
+                            <path class="leaf" style="animation-delay: 0.9s" d="M126.0,64.0 C134.8,51.0 133.9,35.3 129.4,25.0 C123.2,34.3 119.6,49.7 126.0,64.0 Z" />
+                            <path class="leaf" style="animation-delay: 1.05s" d="M126.0,64.0 C140.8,64.3 152.7,55.5 158.5,46.7 C148.0,46.6 134.0,51.6 126.0,64.0 Z" />
+                            <path class="leaf" style="animation-delay: 1.2s" d="M152.0,52.0 C163.2,42.4 166.2,27.8 164.6,17.4 C156.7,24.3 149.6,37.4 152.0,52.0 Z" />
+                            <path class="leaf" style="animation-delay: 1.35s" d="M152.0,52.0 C155.2,39.5 150.0,27.5 143.7,20.9 C141.5,29.8 143.0,42.7 152.0,52.0 Z" />
+                            <path class="leaf" style="animation-delay: 1.5s" d="M178.0,42.0 C187.6,32.1 189.3,18.2 186.9,8.7 C180.1,15.8 174.6,28.6 178.0,42.0 Z" />
+                            <path class="leaf" style="animation-delay: 1.65s" d="M202.0,32.0 C212.1,25.5 216.1,14.1 216.0,5.6 C208.9,10.3 201.7,20.0 202.0,32.0 Z" />
+                            <path class="stem" d="M74,79 C72,84 71,88 71,91" stroke="var(--green)" stroke-width="1.3" fill="none" stroke-linecap="round" style="animation-delay: 1.7s" />
+                            <ellipse class="olive-fruit" style="animation-delay: 1.8s" cx="71" cy="98" rx="6" ry="8" />
+                            <ellipse class="olive-highlight" style="animation-delay: 1.8s" cx="69" cy="95" rx="1.8" ry="2.6" />
+                            <path class="stem" d="M112,68 C112,73 113,77 114,80" stroke="var(--green)" stroke-width="1.3" fill="none" stroke-linecap="round" style="animation-delay: 1.9s" />
+                            <ellipse class="olive-fruit" style="animation-delay: 2s" cx="115" cy="87" rx="5.5" ry="7.2" />
+                            <ellipse class="olive-highlight" style="animation-delay: 2s" cx="113" cy="84.5" rx="1.6" ry="2.3" />
+                            <path class="stem" d="M168,53 C170,58 170,62 169,65" stroke="var(--green)" stroke-width="1.3" fill="none" stroke-linecap="round" style="animation-delay: 2.1s" />
+                            <ellipse class="olive-fruit" style="animation-delay: 2.2s" cx="169" cy="72" rx="5" ry="6.6" />
+                            <ellipse class="olive-highlight" style="animation-delay: 2.2s" cx="167.5" cy="69.8" rx="1.5" ry="2.1" />
+                        </g>
+                    <!-- Right branch: mirrored, tips meet at center -->
+                    <g transform="translate(480,0) scale(-1,1)">
+                        <g class="olive-branch-half">
+                            <path class="stem" d="M14,96 C58,88 118,64 216,20" stroke="var(--gold)" stroke-width="1.6" fill="none" stroke-linecap="round" />
+                            <path class="stem" d="M96,74 C112,66 128,66 142,72" stroke="var(--gold)" stroke-width="1.2" fill="none" stroke-linecap="round" />
+                            <path class="stem" d="M152,52 C168,48 184,50 196,58" stroke="var(--gold)" stroke-width="1.2" fill="none" stroke-linecap="round" />
+                            <path class="leaf" d="M38.0,91.0 C56.4,89.1 69.9,76.4 75.7,64.6 C62.6,66.1 46.0,74.4 38.0,91.0 Z" />
+                            <path class="leaf" style="animation-delay: 0.15s" d="M38.0,91.0 C47.6,102.2 62.2,105.2 72.6,103.6 C65.7,95.7 52.6,88.6 38.0,91.0 Z" />
+                            <path class="leaf" style="animation-delay: 0.3s" d="M66.0,82.0 C81.8,74.4 89.7,58.6 91.1,46.2 C79.9,51.7 67.8,64.6 66.0,82.0 Z" />
+                            <path class="leaf" style="animation-delay: 0.45s" d="M66.0,82.0 C77.0,90.4 91.0,90.3 100.2,86.8 C92.3,80.9 78.9,77.0 66.0,82.0 Z" />
+                            <path class="leaf" style="animation-delay: 0.6s" d="M96.0,74.0 C107.6,62.1 109.5,45.5 106.7,34.0 C98.6,42.5 91.9,57.9 96.0,74.0 Z" />
+                            <path class="leaf" style="animation-delay: 0.75s" d="M96.0,74.0 C111.0,78.6 125.8,73.1 134.2,65.9 C123.6,62.7 107.8,63.7 96.0,74.0 Z" />
+                            <path class="leaf" style="animation-delay: 0.9s" d="M126.0,64.0 C134.8,51.0 133.9,35.3 129.4,25.0 C123.2,34.3 119.6,49.7 126.0,64.0 Z" />
+                            <path class="leaf" style="animation-delay: 1.05s" d="M126.0,64.0 C140.8,64.3 152.7,55.5 158.5,46.7 C148.0,46.6 134.0,51.6 126.0,64.0 Z" />
+                            <path class="leaf" style="animation-delay: 1.2s" d="M152.0,52.0 C163.2,42.4 166.2,27.8 164.6,17.4 C156.7,24.3 149.6,37.4 152.0,52.0 Z" />
+                            <path class="leaf" style="animation-delay: 1.35s" d="M152.0,52.0 C155.2,39.5 150.0,27.5 143.7,20.9 C141.5,29.8 143.0,42.7 152.0,52.0 Z" />
+                            <path class="leaf" style="animation-delay: 1.5s" d="M178.0,42.0 C187.6,32.1 189.3,18.2 186.9,8.7 C180.1,15.8 174.6,28.6 178.0,42.0 Z" />
+                            <path class="leaf" style="animation-delay: 1.65s" d="M202.0,32.0 C212.1,25.5 216.1,14.1 216.0,5.6 C208.9,10.3 201.7,20.0 202.0,32.0 Z" />
+                            <path class="stem" d="M74,79 C72,84 71,88 71,91" stroke="var(--green)" stroke-width="1.3" fill="none" stroke-linecap="round" style="animation-delay: 1.7s" />
+                            <ellipse class="olive-fruit" style="animation-delay: 1.8s" cx="71" cy="98" rx="6" ry="8" />
+                            <ellipse class="olive-highlight" style="animation-delay: 1.8s" cx="69" cy="95" rx="1.8" ry="2.6" />
+                            <path class="stem" d="M112,68 C112,73 113,77 114,80" stroke="var(--green)" stroke-width="1.3" fill="none" stroke-linecap="round" style="animation-delay: 1.9s" />
+                            <ellipse class="olive-fruit" style="animation-delay: 2s" cx="115" cy="87" rx="5.5" ry="7.2" />
+                            <ellipse class="olive-highlight" style="animation-delay: 2s" cx="113" cy="84.5" rx="1.6" ry="2.3" />
+                            <path class="stem" d="M168,53 C170,58 170,62 169,65" stroke="var(--green)" stroke-width="1.3" fill="none" stroke-linecap="round" style="animation-delay: 2.1s" />
+                            <ellipse class="olive-fruit" style="animation-delay: 2.2s" cx="169" cy="72" rx="5" ry="6.6" />
+                            <ellipse class="olive-highlight" style="animation-delay: 2.2s" cx="167.5" cy="69.8" rx="1.5" ry="2.1" />
+                        </g>
+                        </g>
+                </svg>
+                    <div class="brand-top">Dalla nostra cucina</div>
+                    <h2 class="brand-main"><span class="g">Frisch aus</span><span class="r"> unserer Küche</span></h2>
+                    <div class="brand-bottom"><span></span>Qualità<span></span></div>
+                </div>
+
+                <div class="food-grid reveal-stagger">
+                    <div class="food-item large">
+                        <div class="food-img" style="background-image: url('assets/margherita.jpg')" loading="lazy"></div>
+                        <div class="food-item-overlay">
+                            <h3>Margherita D.O.P.</h3>
+                            <p>Büffelmozzarella, San Marzano, Basilikum</p>
+                        </div>
+                    </div>
+                    <div class="food-item tall">
+                        <div class="food-img" style="background-image: url('assets/hero1 (1).webp')" loading="lazy"></div>
+                        <div class="food-item-overlay">
+                            <h3>Antipasti Misto</h3>
+                            <p>Hausgemachte Vorspeisen</p>
+                        </div>
+                    </div>
+                    <div class="food-item">
+                        <div class="food-img" style="background-image: url('assets/dough.jpg')" loading="lazy"></div>
+                        <div class="food-item-overlay">
+                            <h3>96 Stunden</h3>
+                            <p>Langsame Teigführung</p>
+                        </div>
+                    </div>
+                    <div class="food-item">
+                        <div class="food-img" style="background-image: url('assets/pesto.jpg')" loading="lazy"></div>
+                        <div class="food-item-overlay">
+                            <h3>Pesto Verde</h3>
+                            <p>Frisch zubereitet</p>
+                        </div>
+                    </div>
+                    <div class="food-item wide">
+                        <div class="food-img" style="background-image: url('assets/hero2 (1).webp')" loading="lazy"></div>
+                        <div class="food-item-overlay">
+                            <h3>Dal Forno</h3>
+                            <p>Direkt aus dem Steinofen</p>
+                        </div>
+                    </div>
+                    <div class="food-item">
+                        <div class="food-img" style="background-image: url('assets/burrata.jpg')" loading="lazy"></div>
+                        <div class="food-item-overlay">
+                            <h3>Burrata di Puglia</h3>
+                            <p>Cremig, frisch, unwiderstehlich</p>
+                        </div>
+                    </div>
+                    <div class="food-item tall">
+                        <div class="food-img" style="background-image: url('assets/hero3 (1).webp')" loading="lazy"></div>
+                        <div class="food-item-overlay">
+                            <h3>Pasta Fresca</h3>
+                            <p>Täglich hausgemacht</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STORY SECTION -->
+        <section class="story-section">
+            <div class="container">
+                <div class="story-grid">
+                    <div class="story-image reveal reveal-left">
+                        <div class="food-img" style="background-image: url('assets/dough.jpg')"></div>
+                    </div>
+                    <div class="story-content reveal reveal-right">
+                        <p class="section-eyebrow" style="text-align: left;">Unsere Philosophie</p>
+                        <h2>Geduld ist<br>die geheime Zutat.</h2>
+                        <p>Während andere Pizzerien ihren Teig in wenigen Stunden verarbeiten, geben wir ihm volle vier Tage Zeit. Das Ergebnis: ein unvergleichlich leichter, aromatischer Teig mit perfekter Textur.</p>
+                        <p>Wir verwenden ausschließlich echte italienische Zutaten — San Marzano Tomaten vom Fuße des Vesuvs und Büffelmozzarella aus Kampanien.</p>
+                        <div class="story-stat">
+                            <strong class="counter" data-target="96">0</strong>
+                            <span>Stunden<br>Teigruhe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MARQUEE BAND -->
+        <div class="marquee-band" aria-hidden="true">
+            <div class="marquee-track">
+                <span>96 Stunden Teigruhe</span><b>✦</b><span>Steinofen 450&deg;C</span><b>✦</b><span>San Marzano D.O.P.</span><b>✦</b><span>B&uuml;ffelmozzarella</span><b>✦</b><span>Familienrezept</span><b>✦</b><span>Handgemacht in Siegen</span><b>✦</b>
+                <span>96 Stunden Teigruhe</span><b>✦</b><span>Steinofen 450&deg;C</span><b>✦</b><span>San Marzano D.O.P.</span><b>✦</b><span>B&uuml;ffelmozzarella</span><b>✦</b><span>Familienrezept</span><b>✦</b><span>Handgemacht in Siegen</span><b>✦</b>
+            </div>
+        </div>
+
+        <!-- OVEN SECTION -->
+        <section class="oven-section">
+            <div class="container">
+                <p class="section-eyebrow">Il Forno a Legna</p>
+                <h2 class="section-title">450 Grad. 90 Sekunden.<br>Perfektion.</h2>
+                <div class="oven-grid reveal-stagger">
+                    <div class="oven-card">
+                        <i class="fas fa-fire"></i>
+                        <h3>Echter Steinofen</h3>
+                        <p>Eichen- und Buchenholz geben unserer Pizza die unverwechselbare leicht rauchige Note — wie in Neapel.</p>
+                    </div>
+                    <div class="oven-card">
+                        <i class="far fa-clock"></i>
+                        <h3>Nur 90 Sekunden</h3>
+                        <p>Bei 450&deg;C backt unsere Pizza in rekordverdächtiger Zeit — der Rand wird luftig, der Boden knusprig.</p>
+                    </div>
+                    <div class="oven-card">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <h3>Von Hand geworfen</h3>
+                        <p>Kein Nudelholz, keine Maschine. Unser Pizzaiolo formt jeden Teigling mit den Händen — seit Tag eins.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MENU HIGHLIGHTS -->
+        <section class="menu-section">
+            <div class="container">
+                <div class="section-header-brand reveal reveal-up">
+                    <svg class="olive-premium-svg" viewBox="0 0 480 110" xmlns="http://www.w3.org/2000/svg" style="width: 300px; margin-bottom: 1.25rem;">
+                    <!-- Left branch -->
+
+                        <g class="olive-branch-half">
+                            <path class="stem" d="M14,96 C58,88 118,64 216,20" stroke="var(--gold)" stroke-width="1.6" fill="none" stroke-linecap="round" />
+                            <path class="stem" d="M96,74 C112,66 128,66 142,72" stroke="var(--gold)" stroke-width="1.2" fill="none" stroke-linecap="round" />
+                            <path class="stem" d="M152,52 C168,48 184,50 196,58" stroke="var(--gold)" stroke-width="1.2" fill="none" stroke-linecap="round" />
+                            <path class="leaf" d="M38.0,91.0 C56.4,89.1 69.9,76.4 75.7,64.6 C62.6,66.1 46.0,74.4 38.0,91.0 Z" />
+                            <path class="leaf" style="animation-delay: 0.15s" d="M38.0,91.0 C47.6,102.2 62.2,105.2 72.6,103.6 C65.7,95.7 52.6,88.6 38.0,91.0 Z" />
+                            <path class="leaf" style="animation-delay: 0.3s" d="M66.0,82.0 C81.8,74.4 89.7,58.6 91.1,46.2 C79.9,51.7 67.8,64.6 66.0,82.0 Z" />
+                            <path class="leaf" style="animation-delay: 0.45s" d="M66.0,82.0 C77.0,90.4 91.0,90.3 100.2,86.8 C92.3,80.9 78.9,77.0 66.0,82.0 Z" />
+                            <path class="leaf" style="animation-delay: 0.6s" d="M96.0,74.0 C107.6,62.1 109.5,45.5 106.7,34.0 C98.6,42.5 91.9,57.9 96.0,74.0 Z" />
+                            <path class="leaf" style="animation-delay: 0.75s" d="M96.0,74.0 C111.0,78.6 125.8,73.1 134.2,65.9 C123.6,62.7 107.8,63.7 96.0,74.0 Z" />
+                            <path class="leaf" style="animation-delay: 0.9s" d="M126.0,64.0 C134.8,51.0 133.9,35.3 129.4,25.0 C123.2,34.3 119.6,49.7 126.0,64.0 Z" />
+                            <path class="leaf" style="animation-delay: 1.05s" d="M126.0,64.0 C140.8,64.3 152.7,55.5 158.5,46.7 C148.0,46.6 134.0,51.6 126.0,64.0 Z" />
+                            <path class="leaf" style="animation-delay: 1.2s" d="M152.0,52.0 C163.2,42.4 166.2,27.8 164.6,17.4 C156.7,24.3 149.6,37.4 152.0,52.0 Z" />
+                            <path class="leaf" style="animation-delay: 1.35s" d="M152.0,52.0 C155.2,39.5 150.0,27.5 143.7,20.9 C141.5,29.8 143.0,42.7 152.0,52.0 Z" />
+                            <path class="leaf" style="animation-delay: 1.5s" d="M178.0,42.0 C187.6,32.1 189.3,18.2 186.9,8.7 C180.1,15.8 174.6,28.6 178.0,42.0 Z" />
+                            <path class="leaf" style="animation-delay: 1.65s" d="M202.0,32.0 C212.1,25.5 216.1,14.1 216.0,5.6 C208.9,10.3 201.7,20.0 202.0,32.0 Z" />
+                            <path class="stem" d="M74,79 C72,84 71,88 71,91" stroke="var(--green)" stroke-width="1.3" fill="none" stroke-linecap="round" style="animation-delay: 1.7s" />
+                            <ellipse class="olive-fruit" style="animation-delay: 1.8s" cx="71" cy="98" rx="6" ry="8" />
+                            <ellipse class="olive-highlight" style="animation-delay: 1.8s" cx="69" cy="95" rx="1.8" ry="2.6" />
+                            <path class="stem" d="M112,68 C112,73 113,77 114,80" stroke="var(--green)" stroke-width="1.3" fill="none" stroke-linecap="round" style="animation-delay: 1.9s" />
+                            <ellipse class="olive-fruit" style="animation-delay: 2s" cx="115" cy="87" rx="5.5" ry="7.2" />
+                            <ellipse class="olive-highlight" style="animation-delay: 2s" cx="113" cy="84.5" rx="1.6" ry="2.3" />
+                            <path class="stem" d="M168,53 C170,58 170,62 169,65" stroke="var(--green)" stroke-width="1.3" fill="none" stroke-linecap="round" style="animation-delay: 2.1s" />
+                            <ellipse class="olive-fruit" style="animation-delay: 2.2s" cx="169" cy="72" rx="5" ry="6.6" />
+                            <ellipse class="olive-highlight" style="animation-delay: 2.2s" cx="167.5" cy="69.8" rx="1.5" ry="2.1" />
+                        </g>
+                    <!-- Right branch: mirrored, tips meet at center -->
+                    <g transform="translate(480,0) scale(-1,1)">
+                        <g class="olive-branch-half">
+                            <path class="stem" d="M14,96 C58,88 118,64 216,20" stroke="var(--gold)" stroke-width="1.6" fill="none" stroke-linecap="round" />
+                            <path class="stem" d="M96,74 C112,66 128,66 142,72" stroke="var(--gold)" stroke-width="1.2" fill="none" stroke-linecap="round" />
+                            <path class="stem" d="M152,52 C168,48 184,50 196,58" stroke="var(--gold)" stroke-width="1.2" fill="none" stroke-linecap="round" />
+                            <path class="leaf" d="M38.0,91.0 C56.4,89.1 69.9,76.4 75.7,64.6 C62.6,66.1 46.0,74.4 38.0,91.0 Z" />
+                            <path class="leaf" style="animation-delay: 0.15s" d="M38.0,91.0 C47.6,102.2 62.2,105.2 72.6,103.6 C65.7,95.7 52.6,88.6 38.0,91.0 Z" />
+                            <path class="leaf" style="animation-delay: 0.3s" d="M66.0,82.0 C81.8,74.4 89.7,58.6 91.1,46.2 C79.9,51.7 67.8,64.6 66.0,82.0 Z" />
+                            <path class="leaf" style="animation-delay: 0.45s" d="M66.0,82.0 C77.0,90.4 91.0,90.3 100.2,86.8 C92.3,80.9 78.9,77.0 66.0,82.0 Z" />
+                            <path class="leaf" style="animation-delay: 0.6s" d="M96.0,74.0 C107.6,62.1 109.5,45.5 106.7,34.0 C98.6,42.5 91.9,57.9 96.0,74.0 Z" />
+                            <path class="leaf" style="animation-delay: 0.75s" d="M96.0,74.0 C111.0,78.6 125.8,73.1 134.2,65.9 C123.6,62.7 107.8,63.7 96.0,74.0 Z" />
+                            <path class="leaf" style="animation-delay: 0.9s" d="M126.0,64.0 C134.8,51.0 133.9,35.3 129.4,25.0 C123.2,34.3 119.6,49.7 126.0,64.0 Z" />
+                            <path class="leaf" style="animation-delay: 1.05s" d="M126.0,64.0 C140.8,64.3 152.7,55.5 158.5,46.7 C148.0,46.6 134.0,51.6 126.0,64.0 Z" />
+                            <path class="leaf" style="animation-delay: 1.2s" d="M152.0,52.0 C163.2,42.4 166.2,27.8 164.6,17.4 C156.7,24.3 149.6,37.4 152.0,52.0 Z" />
+                            <path class="leaf" style="animation-delay: 1.35s" d="M152.0,52.0 C155.2,39.5 150.0,27.5 143.7,20.9 C141.5,29.8 143.0,42.7 152.0,52.0 Z" />
+                            <path class="leaf" style="animation-delay: 1.5s" d="M178.0,42.0 C187.6,32.1 189.3,18.2 186.9,8.7 C180.1,15.8 174.6,28.6 178.0,42.0 Z" />
+                            <path class="leaf" style="animation-delay: 1.65s" d="M202.0,32.0 C212.1,25.5 216.1,14.1 216.0,5.6 C208.9,10.3 201.7,20.0 202.0,32.0 Z" />
+                            <path class="stem" d="M74,79 C72,84 71,88 71,91" stroke="var(--green)" stroke-width="1.3" fill="none" stroke-linecap="round" style="animation-delay: 1.7s" />
+                            <ellipse class="olive-fruit" style="animation-delay: 1.8s" cx="71" cy="98" rx="6" ry="8" />
+                            <ellipse class="olive-highlight" style="animation-delay: 1.8s" cx="69" cy="95" rx="1.8" ry="2.6" />
+                            <path class="stem" d="M112,68 C112,73 113,77 114,80" stroke="var(--green)" stroke-width="1.3" fill="none" stroke-linecap="round" style="animation-delay: 1.9s" />
+                            <ellipse class="olive-fruit" style="animation-delay: 2s" cx="115" cy="87" rx="5.5" ry="7.2" />
+                            <ellipse class="olive-highlight" style="animation-delay: 2s" cx="113" cy="84.5" rx="1.6" ry="2.3" />
+                            <path class="stem" d="M168,53 C170,58 170,62 169,65" stroke="var(--green)" stroke-width="1.3" fill="none" stroke-linecap="round" style="animation-delay: 2.1s" />
+                            <ellipse class="olive-fruit" style="animation-delay: 2.2s" cx="169" cy="72" rx="5" ry="6.6" />
+                            <ellipse class="olive-highlight" style="animation-delay: 2.2s" cx="167.5" cy="69.8" rx="1.5" ry="2.1" />
+                        </g>
+                        </g>
+                </svg>
+                    <div class="brand-top">La nostra carta</div>
+                    <h2 class="brand-main"><span class="g">Unsere</span><span class="r"> Klassiker</span></h2>
+                    <div class="brand-bottom"><span></span>Tradizione<span></span></div>
+                </div>
+
+                <div class="menu-columns reveal-stagger">
+                    <div class="menu-col">
+                        <h3>Antipasti</h3>
+                        <div class="dish">
+                            <div class="dish-header">
+                                <span class="dish-title">Bruschetta Classica</span>
+                                <span class="dish-price">7,50 €</span>
+                            </div>
+                            <p class="dish-desc">Geröstetes Brot, San Marzano Tomaten, Knoblauch, Basilikum.</p>
+                        </div>
+                        <div class="dish">
+                            <div class="dish-header">
+                                <span class="dish-title">Burrata di Puglia</span>
+                                <span class="dish-price">14,00 €</span>
+                            </div>
+                            <p class="dish-desc">Cremige Burrata, Rucola, Kirschtomaten, Olivenöl extra vergine.</p>
+                            <span class="dish-label">Spezialität des Hauses</span>
+                        </div>
+                        <div class="dish">
+                            <div class="dish-header">
+                                <span class="dish-title">Carpaccio di Manzo</span>
+                                <span class="dish-price">14,50 €</span>
+                            </div>
+                            <p class="dish-desc">Hauchdünnes Rinderfilet, Rucola, Grana Padano, Zitrone.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-col">
+                        <h3>Le Pizze</h3>
+                        <div class="dish">
+                            <div class="dish-header">
+                                <span class="dish-title">Margherita D.O.P.</span>
+                                <span class="dish-price">12,50 €</span>
+                            </div>
+                            <p class="dish-desc">Büffelmozzarella Campana, San Marzano Tomaten, frisches Basilikum.</p>
+                            <span class="dish-label">Authentisch Neapolitanisch</span>
+                        </div>
+                        <div class="dish">
+                            <div class="dish-header">
+                                <span class="dish-title">Diavola</span>
+                                <span class="dish-price">15,00 €</span>
+                            </div>
+                            <p class="dish-desc">Scharfe Salami Calabrese, Chili, Mozzarella, schwarze Oliven.</p>
+                        </div>
+                        <div class="dish">
+                            <div class="dish-header">
+                                <span class="dish-title">Parma e Rucola</span>
+                                <span class="dish-price">16,50 €</span>
+                            </div>
+                            <p class="dish-desc">Parmaschinken, Rucola, Grana Padano Späne, Olivenöl.</p>
+                        </div>
+                        <div class="dish">
+                            <div class="dish-header">
+                                <span class="dish-title">Quattro Formaggi</span>
+                                <span class="dish-price">15,50 €</span>
+                            </div>
+                            <p class="dish-desc">Gorgonzola, Fontina, Parmesan, Mozzarella.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-col">
+                        <h3>Pasta &amp; Dolci</h3>
+                        <div class="dish">
+                            <div class="dish-header">
+                                <span class="dish-title">Tagliatelle al Tartufo</span>
+                                <span class="dish-price">18,50 €</span>
+                            </div>
+                            <p class="dish-desc">Hausgemachte Pasta mit frischem schwarzem Trüffel.</p>
+                        </div>
+                        <div class="dish">
+                            <div class="dish-header">
+                                <span class="dish-title">Panna Cotta</span>
+                                <span class="dish-price">7,50 €</span>
+                            </div>
+                            <p class="dish-desc">Vanille-Panna-Cotta mit hausgemachtem Erdbeerspiegel.</p>
+                        </div>
+                        <div class="dish">
+                            <div class="dish-header">
+                                <span class="dish-title">Tiramisu Artigianale</span>
+                                <span class="dish-price">8,50 €</span>
+                            </div>
+                            <p class="dish-desc">Nach dem Geheimrezept der Nonna, täglich frisch zubereitet.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 4rem;">
+                    <a href="menu.html" class="btn-outline">Gesamte Speisekarte ansehen</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="testimonials-section">
+            <div class="container">
+                <p class="section-eyebrow">Voci dai nostri ospiti</p>
+                <h2 class="section-title">Was unsere G&auml;ste sagen.</h2>
+                <div class="testimonial-grid reveal-stagger">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">&bdquo;Der Teig ist einfach weltklasse — luftig, leicht und mit diesem wunderbaren Rand. Besser als in Neapel!&ldquo;</p>
+                        <div class="testimonial-author">
+                            <strong>Sabine K.</strong> <span class="author-role">Stammg&auml;stin seit 2024</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">&bdquo;Endlich echte italienische Küche in Siegen. Die Burrata ist ein Tr&auml;umchen und der Service herzlich wie bei der Familie.&ldquo;</p>
+                        <div class="testimonial-author">
+                            <strong>Markus T.</strong> <span class="author-role">Google Rezension</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">&bdquo;Wir feiern hier jedes Familienfest. Das Catering ist perfekt organisiert und das Tiramisu verschwindet immer zuerst.&ldquo;</p>
+                        <div class="testimonial-author">
+                            <strong>Familie Weber</strong> <span class="author-role">Catering-Kundin</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-badge">
+                    <span class="badge-score">4,9</span>
+                    <div class="badge-detail">
+                        <span class="badge-stars">★★★★★</span>
+                        <span>aus &uuml;ber 380 Google-Bewertungen</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section">
+            <div class="container container-narrow">
+                <p class="section-eyebrow">Domande frequenti</p>
+                <h2 class="section-title">H&auml;ufige Fragen.</h2>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>Brauche ich eine Reservierung?</summary>
+                        <p>Wir empfehlen eine Reservierung, besonders an Wochenenden — aber spontane G&auml;ste bekommen bei freien Tischen immer einen Platz.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Liefert ihr auch nach Hause?</summary>
+                        <p>Ja — innerhalb Siegens liefern wir mit unserer roten Vespa in 30&ndash;45 Minuten. Einfach telefonisch bestellen.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Gibt es glutenfreie oder vegane Optionen?</summary>
+                        <p>Ja! Unsere Pizza Vegana Verde ist 100% vegan, glutenfreier Teig ist auf Vorbestellung verf&uuml;gbar. Sprechen Sie uns einfach an.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>K&ouml;nnen wir mit Kindern kommen?</summary>
+                        <p>Nat&uuml;rlich — wir haben einen Kinderbereich, die Pizza Topolino und Hochst&uuml;hle. Kinder sind bei uns immer herzlich willkommen.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Kann man im Lokal feiern?</summary>
+                        <p>Unser Raum bietet bis zu 40 Personen Platz. F&uuml;r Geburtstage, Firmenfeiern und Hochzeiten sehen Sie sich unsere <a href="catering.html">Catering-Seite</a> an.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Welche Zahlungsmittel akzeptiert ihr?</summary>
+                        <p>Bargeld, EC-Karte, Visa, Mastercard und Apple Pay — selbstverst&auml;ndlich auch Splitting f&uuml;r gro&szlig;e Runden.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="cta-section reveal">
+            <div class="container">
+                <p class="section-eyebrow">Prenotazione</p>
+                <h2>Wir freuen uns auf Ihren Besuch.</h2>
+                <p>Reservieren Sie Ihren Tisch und genießen Sie einen unvergesslichen Abend mit authentischer italienischer Küche.</p>
+                <a href="kontakt.html" class="btn-primary">Tisch reservieren</a>
+            </div>
+        </section>
+
+        <!-- Vespa Delivery Strip -->
+        <div class="vespa-container" id="vespa-track" aria-hidden="true">
+            <div class="vespa-road"></div>
+            <div class="vespa-scooter">
+                <div class="vespa-float">
+                    <svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg" class="vespa-svg">
+                        <defs>
+                            <linearGradient id="vespaBodyGrad" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0" stop-color="#e8392b" />
+                                <stop offset="1" stop-color="#b3261a" />
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Exhaust puffs -->
+                        <circle class="vespa-puff" cx="24" cy="104" r="4" />
+                        <circle class="vespa-puff" style="animation-delay: 0.6s" cx="14" cy="97" r="6" />
+                        <circle class="vespa-puff" style="animation-delay: 1.2s" cx="6" cy="88" r="8" />
+
+                        <!-- Pizza boxes on the rear rack -->
+                        <g class="vespa-boxes">
+                            <rect x="34" y="44" width="50" height="11" rx="2" fill="var(--cream)" stroke="var(--gold)" stroke-width="1.8" />
+                            <rect x="38" y="33" width="42" height="11" rx="2" fill="var(--cream)" stroke="var(--gold)" stroke-width="1.8" />
+                            <rect x="37" y="46.5" width="3.5" height="6" fill="#2e7d32" />
+                            <rect x="40.5" y="46.5" width="3.5" height="6" fill="#f5f0e6" stroke="var(--gold)" stroke-width="0.5" />
+                            <rect x="44" y="46.5" width="3.5" height="6" fill="var(--red)" />
+                            <line x1="63" y1="33" x2="63" y2="55" stroke="var(--gold)" stroke-width="1.3" />
+                        </g>
+                        <!-- Rack -->
+                        <path d="M63,55 L63,62 M52,62 L74,62" stroke="var(--gold)" stroke-width="2" fill="none" stroke-linecap="round" />
+
+                        <!-- == VESPA MONOCOQUE BODY == round rear shell sweeping into floorboard and leg shield -->
+                        <path d="M 66,78 C 66,60 80,50 100,50 L 118,50 C 132,50 142,58 146,70 L 152,86 C 154,92 158,96 164,98 L 168,100 C 174,90 180,74 184,62 C 186,56 190,52 195,52 L 197,52 C 201,52 204,55 204,59 L 196,100 C 194,108 188,112 180,112 L 96,112 C 78,112 66,98 66,78 Z" fill="url(#vespaBodyGrad)" />
+
+                        <!-- Chrome trim line -->
+                        <path d="M 70,80 C 72,66 84,58 100,58 L 116,58 C 128,58 136,64 140,74" fill="none" stroke="#f5d9a6" stroke-width="1.4" opacity="0.8" />
+
+                        <!-- Seat -->
+                        <path d="M 92,50 C 92,42 100,38 112,38 L 130,38 C 138,38 142,42 141,48 C 140,53 136,55 130,55 L 98,55 C 94,55 92,53 92,50 Z" fill="#4a2d18" />
+
+                        <!-- Handlebar column -->
+                        <path d="M 197,52 L 192,36" stroke="#b3261a" stroke-width="5" stroke-linecap="round" />
+                        <!-- Grip -->
+                        <path d="M 183,34 L 200,33" stroke="#4a2d18" stroke-width="4.5" stroke-linecap="round" />
+                        <!-- Mirror -->
+                        <path d="M 194,36 L 186,24" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" />
+                        <circle cx="185" cy="22" r="3" fill="var(--gold)" />
+
+                        <!-- Headlight -->
+                        <circle cx="200" cy="42" r="5" fill="var(--gold)" />
+                        <circle cx="200" cy="42" r="2" fill="#fff7e0" />
+
+                        <!-- Front fork (chrome) -->
+                        <path d="M 196,62 L 205,108" stroke="#c9c2b4" stroke-width="5" stroke-linecap="round" />
+
+                        <!-- Exhaust pipe (chrome) -->
+                        <path d="M 84,116 L 62,116" stroke="#c9c2b4" stroke-width="3.5" stroke-linecap="round" />
+                        <path d="M 60,112 L 60,120" stroke="#c9c2b4" stroke-width="3" stroke-linecap="round" />
+
+                        <!-- Wheels: whitewall tires, chrome hubcap -->
+                        <g class="vespa-wheel">
+                            <circle cx="64" cy="122" r="17" fill="#f5f0e6" stroke="#3a2a20" stroke-width="2" />
+                            <circle cx="64" cy="122" r="10" fill="#d9d4c8" />
+                            <circle cx="64" cy="122" r="4" fill="var(--gold)" />
+                        </g>
+                        <g class="vespa-wheel">
+                            <circle cx="204" cy="122" r="17" fill="#f5f0e6" stroke="#3a2a20" stroke-width="2" />
+                            <circle cx="204" cy="122" r="10" fill="#d9d4c8" />
+                            <circle cx="204" cy="122" r="4" fill="var(--gold)" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="tricolor-stripe">
+            <div class="stripe-g"></div>
+            <div class="stripe-w"></div>
+            <div class="stripe-r"></div>
+        </div>
+
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="brand-logo" style="pointer-events: none;">
+                            <div class="logo-top">Pizzeria</div>
+                            <div class="logo-main"><span class="g">ITALI</span><span class="r">ANA</span></div>
+                            <div class="logo-bottom"><span></span>Siegen<span></span></div>
+                        </div>
+                        <p>Authentische italienische Pizza, handgefertigt mit Leidenschaft in Siegen.</p>
+                    </div>
+
+                    <ul class="footer-links">
+                        <li><a href="uber-uns.html">Über uns</a></li>
+                        <li><a href="catering.html">Catering</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                    </ul>
+
+                    <div class="social-icons">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2026 L'Italiana Siegen GmbH. Alle Rechte vorbehalten.
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/492711234567" class="whatsapp-float" id="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <p>Wir verwenden Cookies, um Ihnen das bestmögliche Erlebnis auf unserer Webseite zu bieten. <a href="datenschutz.html">Mehr erfahren</a></p>
+        <button id="accept-cookies" class="btn-primary">Einverstanden</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standorte | L'Italiana • Siegen</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container nav-wrapper">
+            <a href="index.html" class="brand-logo">
+                <div class="logo-top">Pizzeria</div>
+                <div class="logo-main"><span class="g">ITALI</span><span class="r">ANA</span></div>
+                <div class="logo-bottom"><span></span>Siegen<span></span></div>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Menü öffnen">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="main-nav" id="main-nav">
+                <li><a href="menu.html">Speisekarte</a></li>
+                <li><a href="uber-uns.html">Über uns</a></li>
+                <li><a href="standorte.html" class="active">Standorte</a></li>
+                <li><a href="catering.html">Catering</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="kontakt.html" class="btn-primary">Reservieren</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="container" style="padding: 6rem 0;">
+            <div class="page-header">
+                <div class="page-title-brand reveal reveal-up">
+                    <div class="brand-top">Dove trovarci</div>
+                    <h1 class="brand-main"><span class="g">Unsere</span><span class="r"> Standorte</span></h1>
+                    <div class="brand-bottom"><span></span>Siegen<span></span></div>
+                </div>
+            </div>
+
+            <p class="standorte-lead reveal reveal-up">Zwei Orte, ein Versprechen: echte neapolitanische Pizza, frisch aus dem Steinofen &mdash; mitten in Siegen.</p>
+
+            <div class="menu-columns">
+                <div class="dish location-card reveal reveal-left" style="padding: 2.5rem;">
+                    <div class="location-badge">Stammhaus</div>
+                    <h3>Siegen Oberstadt</h3>
+                    <p class="location-address">K&ouml;lner Stra&szlig;e 12<br>57072 Siegen</p>
+                    <p style="margin-top: 1rem;"><strong>&Ouml;ffnungszeiten:</strong><br>Mo-So: 11:30 - 22:00</p>
+                    <p>Tel: <a href="tel:+492711234567" class="location-phone">0271 1234567</a></p>
+                    <ul class="location-features">
+                        <li><i class="fas fa-utensils"></i> 60 Sitzpl&auml;tze indoors</li>
+                        <li><i class="fas fa-umbrella-beach"></i> Terrasse im Sommer</li>
+                        <li><i class="fas fa-baby-carriage"></i> Kinderfreundlich</li>
+                        <li><i class="fas fa-wheelchair"></i> Barrierefreier Zugang</li>
+                    </ul>
+                    <a class="btn-outline location-route" href="https://www.google.com/maps/dir/?api=1&destination=K%C3%B6lner+Stra%C3%9Fe+12,+57072+Siegen" target="_blank" rel="noopener noreferrer"><i class="fas fa-diamond-turn-right"></i> Route planen</a>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.452652157545!2d8.01633537688439!3d50.873673556447885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bc1d9e26e3f43d%3A0x6334a17088b64e62!2zS8O2bG5lciBTdHIuIDEyLCA1NzA3MiBTaWVnZW4!5e0!3m2!1sde!2sde!4v1715080000000!5m2!1sde!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="dish location-card reveal reveal-right" style="padding: 2.5rem;">
+                    <div class="location-badge gold">Neu</div>
+                    <h3>Siegen Weidenau</h3>
+                    <p class="location-address">Hauptstra&szlig;e 45<br>57076 Siegen</p>
+                    <p style="margin-top: 1rem;"><strong>&Ouml;ffnungszeiten:</strong><br>Mo-So: 12:00 - 23:00</p>
+                    <p>Tel: <a href="tel:+492717654321" class="location-phone">0271 7654321</a></p>
+                    <ul class="location-features">
+                        <li><i class="fas fa-utensils"></i> 40 Sitzpl&auml;tze, gem&uuml;tlich</li>
+                        <li><i class="fas fa-car"></i> Kostenlose Parkpl&auml;tze</li>
+                        <li><i class="fas fa-people-group"></i> Gruppen bis 15 Personen</li>
+                        <li><i class="fas fa-bag-shopping"></i> Abholung &amp; Lieferung</li>
+                    </ul>
+                    <a class="btn-outline location-route" href="https://www.google.com/maps/dir/?api=1&destination=Hauptstra%C3%9Fe+45,+57076+Siegen" target="_blank" rel="noopener noreferrer"><i class="fas fa-diamond-turn-right"></i> Route planen</a>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2515.657688537545!2d8.02833537688439!3d50.893673556447885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bc1db926e3f43d%3A0x6334a17088b64e62!2zSGF1cHRzdHJhw59lIDQ1LCA1NzA3NiBTaWVnZW4!5e0!3m2!1sde!2sde!4v1715080000000!5m2!1sde!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Anfahrt / Parken -->
+            <div class="anfahrt-box reveal reveal-up">
+                <h3><i class="fas fa-car"></i> So finden Sie uns</h3>
+                <div class="anfahrt-grid">
+                    <div>
+                        <h4>Mit dem Auto</h4>
+                        <p>Beide Standorte liegen zentral und sind über die B54/Hüttentalstra&szlig;e in wenigen Minuten erreichbar. In Oberstadt stehen Parkh&auml;user in unmittelbarer N&auml;he bereit, in Weidenau parken Sie kostenlos direkt am Haus.</p>
+                    </div>
+                    <div>
+                        <h4>Öffentliche Verkehrsmittel</h4>
+                        <p>Vom Hauptbahnhof Siegen erreichen Sie uns Oberstadt mit den Buslinien der VWS in rund 10 Minuten. Weidenau ist mit der Bahn (Haltepunkt Siegen-Weidenau) nur 4 Minuten vom Zentrum entfernt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="standorte-cta reveal reveal-up">
+                <h2>Hunger bekommen?</h2>
+                <p>Reservieren Sie Ihren Tisch oder bestellen Sie direkt zur Abholung.</p>
+                <div class="standorte-cta-btns">
+                    <a href="kontakt.html" class="btn-primary">Tisch reservieren</a>
+                    <a href="menu.html" class="btn-outline">Speisekarte ansehen</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="tricolor-stripe">
+            <div class="stripe-g"></div>
+            <div class="stripe-w"></div>
+            <div class="stripe-r"></div>
+        </div>
+
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="brand-logo" style="pointer-events: none;">
+                            <div class="logo-top">Pizzeria</div>
+                            <div class="logo-main"><span class="g">ITALI</span><span class="r">ANA</span></div>
+                            <div class="logo-bottom"><span></span>Siegen<span></span></div>
+                        </div>
+                        <p>Authentische italienische Pizza, handgefertigt mit Leidenschaft in Siegen.</p>
+                    </div>
+
+                    <ul class="footer-links">
+                        <li><a href="uber-uns.html">Über uns</a></li>
+                        <li><a href="catering.html">Catering</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                    </ul>
+
+                    <div class="social-icons">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2026 L'Italiana Siegen GmbH. Alle Rechte vorbehalten.
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/492711234567" class="whatsapp-float" id="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <p>Wir verwenden Cookies, um Ihnen das bestmögliche Erlebnis auf unserer Webseite zu bieten. <a href="datenschutz.html">Mehr erfahren</a></p>
+        <button id="accept-cookies" class="btn-primary">Einverstanden</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

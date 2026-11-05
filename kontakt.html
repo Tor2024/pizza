@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | L'Italiana • Wir freuen uns auf Sie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container nav-wrapper">
+            <a href="index.html" class="brand-logo">
+                <div class="logo-top">Pizzeria</div>
+                <div class="logo-main"><span class="g">ITALI</span><span class="r">ANA</span></div>
+                <div class="logo-bottom"><span></span>Siegen<span></span></div>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Menü öffnen">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="main-nav" id="main-nav">
+                <li><a href="menu.html">Speisekarte</a></li>
+                <li><a href="uber-uns.html">Über uns</a></li>
+                <li><a href="standorte.html">Standorte</a></li>
+                <li><a href="catering.html">Catering</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+                <li><a href="kontakt.html" class="btn-primary">Reservieren</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="container" style="padding: 6rem 0;">
+            <div class="page-header">
+                <div class="page-title-brand reveal reveal-up">
+                    <div class="brand-top">Mettiamoci in contatto</div>
+                    <h1 class="brand-main"><span class="g">Kon</span><span class="r">takt</span></h1>
+                    <div class="brand-bottom"><span></span>Ciao<span></span></div>
+                </div>
+            </div>
+
+            <p class="kontakt-lead reveal reveal-up">Fragen, Wünsche oder eine Reservierung? Schreiben Sie uns &mdash; oder kommen Sie einfach vorbei. Wir freuen uns auf Sie!</p>
+
+            <!-- Quick contact cards -->
+            <div class="kontakt-quick">
+                <a href="tel:+492711234567" class="quick-card reveal reveal-up">
+                    <i class="fas fa-phone"></i>
+                    <h3>Telefon</h3>
+                    <p>0271 1234567</p>
+                    <span>Täglich ab 11:30</span>
+                </a>
+                <a href="https://wa.me/492711234567" target="_blank" rel="noopener noreferrer" class="quick-card reveal reveal-up">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p>Schnell &amp; unkompliziert</p>
+                    <span>Antwort in Minuten</span>
+                </a>
+                <a href="mailto:ciao@l-italiana-siegen.de" class="quick-card reveal reveal-up">
+                    <i class="fas fa-envelope"></i>
+                    <h3>E-Mail</h3>
+                    <p>ciao@l-italiana-siegen.de</p>
+                    <span>Antwort in 24 h</span>
+                </a>
+            </div>
+
+            <div class="menu-columns" style="margin-top: var(--sp-4xl);">
+                <!-- Contact Info -->
+                <div class="menu-col reveal reveal-left">
+                    <h3>Anschrift</h3>
+                    <p>L'Italiana Siegen GmbH<br>Kölner Straße 12<br>57072 Siegen</p>
+                    <p style="margin-top: 2rem;"><strong>E-Mail:</strong><br>ciao@l-italiana-siegen.de</p>
+                    <p><strong>Telefon:</strong><br>0271 1234567</p>
+                    <div class="hours-box">
+                        <h4><i class="fas fa-clock"></i> Öffnungszeiten</h4>
+                        <table class="hours-table">
+                            <tr><td>Montag &ndash; Donnerstag</td><td>11:30 &ndash; 22:00</td></tr>
+                            <tr><td>Freitag &ndash; Samstag</td><td>11:30 &ndash; 23:00</td></tr>
+                            <tr><td>Sonntag</td><td>12:00 &ndash; 22:00</td></tr>
+                        </table>
+                        <p class="hours-note">Küche bis 30 Min. vor Ladenschluss</p>
+                    </div>
+                    <div class="kontakt-map-hint">
+                        <i class="fas fa-location-dot"></i> Zwei Standorte? <a href="standorte.html">Alle Standorte ansehen</a>
+                    </div>
+                </div>
+
+                <!-- Form Template -->
+                <div class="menu-col reveal reveal-right" style="grid-column: span 2;">
+                    <h3>Schreiben Sie uns</h3>
+                    <div class="form-container">
+                        <form class="contact-form">
+                            <div class="form-body" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                                <input type="text" placeholder="Ihr Name" required style="padding: 1rem; border: 1px solid var(--border); font-family: var(--font-body);">
+                                <input type="email" placeholder="Ihre E-Mail" required style="padding: 1rem; border: 1px solid var(--border); font-family: var(--font-body);">
+                                <textarea placeholder="Ihre Nachricht" required rows="5" style="padding: 1rem; border: 1px solid var(--border); font-family: var(--font-body);"></textarea>
+                                <div style="display: flex; gap: 10px; align-items: flex-start; font-size: 0.85rem; color: var(--text-secondary);">
+                                    <input type="checkbox" id="privacy" required style="margin-top: 4px;">
+                                    <label for="privacy">Ich habe die <a href="datenschutz.html" style="color: var(--green); text-decoration: underline;">Datenschutzerklärung</a> gelesen und erkläre mich mit der Verarbeitung meiner Daten zum Zweck der Kontaktaufnahme einverstanden.</label>
+                                </div>
+                                <button type="submit" class="btn-primary">Nachricht senden</button>
+                            </div>
+                            <div class="form-loader">
+                                <div class="spinner"></div>
+                                <p>Wird gesendet...</p>
+                            </div>
+                            <div class="form-success-msg">
+                                <h3 style="color: var(--green); margin-bottom: 1rem;">Grazie!</h3>
+                                <p>Vielen Dank für Ihre Nachricht. Wir melden uns schnellstmöglich bei Ihnen.</p>
+                                <button type="button" class="btn-outline" onclick="location.reload()" style="margin-top: 2rem;">Neu senden</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="tricolor-stripe">
+            <div class="stripe-g"></div>
+            <div class="stripe-w"></div>
+            <div class="stripe-r"></div>
+        </div>
+
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="brand-logo" style="pointer-events: none;">
+                            <div class="logo-top">Pizzeria</div>
+                            <div class="logo-main"><span class="g">ITALI</span><span class="r">ANA</span></div>
+                            <div class="logo-bottom"><span></span>Siegen<span></span></div>
+                        </div>
+                        <p>Authentische italienische Pizza, handgefertigt mit Leidenschaft in Siegen.</p>
+                    </div>
+
+                    <ul class="footer-links">
+                        <li><a href="uber-uns.html">Über uns</a></li>
+                        <li><a href="catering.html">Catering</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                    </ul>
+
+                    <div class="social-icons">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2026 L'Italiana Siegen GmbH. Alle Rechte vorbehalten.
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/492711234567" class="whatsapp-float" id="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <p>Wir verwenden Cookies, um Ihnen das bestmögliche Erlebnis auf unserer Webseite zu bieten. <a href="datenschutz.html">Mehr erfahren</a></p>
+        <button id="accept-cookies" class="btn-primary">Einverstanden</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
